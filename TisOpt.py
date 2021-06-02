@@ -179,7 +179,7 @@ class TissueOptimizer:
     --------
     >>> import TissueOptimizer
     >>> opt = TissueOptimizer("kidney", n_pool=50)
-    >>> seq = "ATGTTCGACCATAGCGTACGTACTTAA"
+    >>> seq = "ATGGTGAGCAAGGGCGAGGAGCTGTTCACCGGGGTGGTGCCCATCCTGGTCGAGCTGGAC"
     >>> opt.optimize(seq)
     >>> best_seq = opt.select_best(top=10)
     
@@ -193,7 +193,7 @@ class TissueOptimizer:
             
             # Get directionality and probabilities for tissue optimization
             # "degree" determines to which extent are unclear codons optimized
-            threshold = np.percentile(codon_ratios.loc[self.tissue,:].abs(),self.degree*100)
+            threshold = np.percentile(codon_ratios.loc[self.tissue,:].abs(),(1.0-self.degree)*100)
             codonprob = {}
             for aa in set(GENETIC_CODE.values()):
                 aa_codons = [c for c in GENETIC_CODE.keys() if np.logical_and((GENETIC_CODE[c] is aa),(c not in ["ATG","TGG","TAA","TGA","TAG"]))]
@@ -226,9 +226,9 @@ class TissueOptimizer:
         Parameters
         ----------
         sequence : str
-            Original nucleotide coding sequence to optimize. It also accepts 
-            amino acid sequences. In the latter, the 'prob_original' argument is 
-            overrun as the optimization runs from scratch with no prior 
+            Original nucleotide coding sequence to optimize without stop codon. 
+            It also accepts amino acid sequences. In the latter, the 'prob_original' 
+            argument is overrun as the optimization runs from scratch with no prior 
             knowledge.
 
         Returns
@@ -280,7 +280,7 @@ class TissueOptimizer:
                         newseq.append(codon)
                 pool.append("".join(newseq))
             self.pool = pool
-        elif all([s in GENETIC_CODE.values() for s in self.sequence]):
+        elif all([s in GENETIC_CODE.values() for s in self.sequence]): # AA sequence
             # Create pool of optimized sequences
             pool = []
             for n in range(self.n_pool):
