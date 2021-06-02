@@ -3,6 +3,7 @@ __author__ = "Xavier Hernandez-Alias"
 Module for optimizing the codon usage of a sequence based on tissue 
 specificities. 
 '''
+import pkg_resources
 import numpy as np
 import pandas as pd
 import RNA
@@ -26,10 +27,18 @@ GENETIC_CODE = {
     'TAC':'Y', 'TAT':'Y', 'TAA':'_', 'TAG':'_',
     'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W'}
 
-codon_weights = pd.read_csv("TisOpt_codon_weights.csv", index_col=0)
-codon_ratios = pd.read_csv("TisOpt_tissue_ratios.csv", index_col=0)
-codon_freq = pd.read_csv("TisOpt_codonfreq_CoCoPuts.csv", index_col=0)
-codpair_freq = pd.read_csv("TisOpt_codonpairsfreq_CoCoPuts.csv", index_col=0)
+def load_data(file):
+    '''
+    Return a dataframe of the required file.
+
+    '''
+    stream = pkg_resources.resource_stream(__name__, file)
+    return pd.read_csv(stream, index_col=0)
+
+codon_weights = load_data('data/TisOpt_codon_weights.csv')
+codon_ratios = load_data('data/TisOpt_tissue_ratios.csv')
+codon_freq = load_data('data/TisOpt_codonfreq_CoCoPuts.csv')
+codpair_freq = load_data('data/TisOpt_codonpairsfreq_CoCoPuts.csv')
 
 def check_is_optimized(optimizer):
     '''

@@ -15,15 +15,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="TisOpt",
     version="0.1",
-    packages=['TisOpt'],
-    package_dir={'TisOpt': 'TisOpt'},
+    packages=find_packages(),
     include_package_data=True,
-    package_data={'TisOpt': ['data/*.csv'],'': ['LICENSE', '*.md']},
+    package_data={'': ['LICENSE', '*.md','data/*.csv']},
     python_requires=">=3.6",
     install_requires=[
         'numpy',
