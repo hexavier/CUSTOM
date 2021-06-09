@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#    setup.py: script to install TisOpt
+#    setup.py: script to install tisopt
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -18,12 +18,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="TisOpt",
+    name="tisopt",
     version="0.0.1",
     packages=find_packages(),
     include_package_data=True,
     package_data={'': ['LICENSE', '*.md','data/*.csv']},
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     install_requires=[
         'numpy',
         'pandas',
