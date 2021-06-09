@@ -11,7 +11,7 @@ This package provides a codon optimization tool for tissue-specific gene design.
 ## Dependencies
 
 - Python >= 3.7
-- [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), [RNA] (https://github.com/ViennaRNA/ViennaRNA)
+- [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), [RNA](https://github.com/ViennaRNA/ViennaRNA)
 
 ## Installing
 
