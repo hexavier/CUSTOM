@@ -13,7 +13,7 @@
 #    GNU General Public License for more details.
 #
 #    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 from setuptools import setup, find_packages
 
@@ -31,6 +31,7 @@ setup(
     ],
     author="Xavier Hernandez-Alias",
     author_email="xavier.hernandez@crg.eu",
+    license="GPLv3",
     description="Codon optimizer for tissue-specific expression",
     url="https://github.com/hexavier/TisOpt",
 )

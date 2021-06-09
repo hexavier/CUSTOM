@@ -186,9 +186,9 @@ class TissueOptimizer:
     
     Examples
     --------
-    >>> import TissueOptimizer
+    >>> import TisOpt
     >>> opt = TissueOptimizer("kidney", n_pool=50)
-    >>> seq = "ATGGTGAGCAAGGGCGAGGAGCTGTTCACCGGGGTGGTGCCCATCCTGGTCGAGCTGGAC"
+    >>> seq = "MVSKGEELFTGVVPILVELDGDVNGHKFSVSG"
     >>> opt.optimize(seq)
     >>> best_seq = opt.select_best(top=10)
     
