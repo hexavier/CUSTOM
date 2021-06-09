@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="img/logo.png" width="300" height="300">
+	<img src="img/logo.png" width="371" height="300">
 </p>
 
 # TisOpt: Codon optimizer for tissue-specific expression
