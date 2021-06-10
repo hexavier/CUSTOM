@@ -45,7 +45,7 @@ Martin H. Schaefer: martin.schaefer@ieo.it
 
 Schaefer laboratory: https://www.schaeferlab.org
 
-Serrano laboratory: https://serranolab.crg.eu
+Serrano laboratory: http://serranolab.crg.eu
 
 
 ## Cite
