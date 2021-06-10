@@ -1,1 +1,1 @@
-from .TisOpt import *
+from .tisopt import *
