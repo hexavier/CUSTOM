@@ -35,10 +35,10 @@ def load_data(file):
     stream = pkg_resources.resource_stream(__name__, file)
     return pd.read_csv(stream, index_col=0)
 
-codon_weights = load_data('data/TisOpt_codon_weights.csv')
-codon_ratios = load_data('data/TisOpt_tissue_ratios.csv')
-codon_freq = load_data('data/TisOpt_codonfreq_CoCoPuts.csv')
-codpair_freq = load_data('data/TisOpt_codonpairsfreq_CoCoPuts.csv')
+codon_weights = load_data('data/CUSTOM_codon_weights.csv')
+codon_ratios = load_data('data/CUSTOM_tissue_ratios.csv')
+codon_freq = load_data('data/CUSTOM_codonfreq_CoCoPuts.csv')
+codpair_freq = load_data('data/CUSTOM_codonpairsfreq_CoCoPuts.csv')
 
 def check_is_optimized(optimizer):
     '''
@@ -186,7 +186,7 @@ class TissueOptimizer:
     
     Examples
     --------
-    >>> import TisOpt
+    >>> import custom
     >>> opt = TissueOptimizer("kidney", n_pool=50)
     >>> seq = "MVSKGEELFTGVVPILVELDGDVNGHKFSVSG"
     >>> opt.optimize(seq)

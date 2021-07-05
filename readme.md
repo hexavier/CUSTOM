@@ -1,8 +1,8 @@
 <p align="center">
-	<img src="img/logo.png" width="371" height="300">
+	<img src="img/logo.png" width="506" height="300">
 </p>
 
-# TisOpt: Codon optimizer for tissue-specific expression
+# CUSTOM: Codon Usage to Specific Tissue OptiMizer
 
 This package provides a codon optimization tool for tissue-specific gene design. It follows a probabilistic approach with two steps:
 1) Translate tissue-specific codon preferences into a pool of optimal sequences
@@ -17,9 +17,9 @@ This package provides a codon optimization tool for tissue-specific gene design.
 
 1) (optional) Create a virtual environment to install the tool
 
-2) Install TisOpt and its requirements using pip:
+2) Install CUSTOM and its requirements using pip:
 ```bash
-pip install tisopt
+pip install custom
 ```
 
 ## Basic usage
@@ -27,8 +27,8 @@ pip install tisopt
 As a basic example, here is the code to optimize an eGFP protein to kidney:
 ```python
 # Import package
-import tisopt
-# Start de optimizer
+import custom
+# Start the optimizer
 opt = TissueOptimizer("kidney", n_pool=100)
 # Optimize the eGFP sequence
 egfp = "MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITLGMDELYK"

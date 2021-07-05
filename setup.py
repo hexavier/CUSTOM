@@ -18,7 +18,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="tisopt",
+    name="custom",
     version="0.0.1",
     packages=find_packages(),
     include_package_data=True,
@@ -32,6 +32,6 @@ setup(
     author="Xavier Hernandez-Alias",
     author_email="xavier.hernandez@crg.eu",
     license="GPLv3",
-    description="Codon optimizer for tissue-specific expression",
+    description="Codon Usage to Specific Tissue OptiMizer",
     url="https://github.com/hexavier/TisOpt",
 )
