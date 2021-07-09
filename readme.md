@@ -19,7 +19,7 @@ This package provides a codon optimization tool for tissue-specific gene design.
 
 2) Install CUSTOM and its requirements using pip:
 ```bash
-pip install custom
+pip install custom-tool
 ```
 
 ## Basic usage
@@ -39,15 +39,23 @@ best_egfp_lung = opt.select_best(by={"MFE":"min","MFEini":"max","CAI":"max","CPB
 
 ## Contact
 
-Xavier Hernandez-Alias: xavier.hernandez@crg.eu
+This project has been developed at [Center for Genomic Regulation](http://www.crg.eu/).
 
-Martin H. Schaefer: martin.schaefer@ieo.it
+[Xavier Hernandez-Alias](mailto:xavier.hernandez@crg.eu)
+[Martin H. Schaefer](mailto:martin.schaefer@ieo.it)
+[Luis Serrano](mailto:luis.serrano@crg.eu)
 
-Schaefer laboratory: https://www.schaeferlab.org
-
-Serrano laboratory: http://serranolab.crg.eu
+[Schaefer laboratory](https://www.schaeferlab.org)
+[Serrano laboratory](http://serranolab.crg.eu)
 
 
 ## Cite
 
 Citation text (https://doi.org/)
+
+
+## License
+
+CUSTOM is under a common GNU GENERAL PUBLIC LICENSE. Plese, check [LICENSE](./LICENSE) for further information.
+
+###### [2021] - Centre de Regulació Genòmica (CRG) - All Rights Reserved*

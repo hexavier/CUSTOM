@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#    setup.py: script to install tisopt
+#    setup.py: script to install custom
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="custom",
+    name="custom-tool",
     version="0.0.1",
     packages=find_packages(),
     include_package_data=True,
@@ -33,5 +33,5 @@ setup(
     author_email="xavier.hernandez@crg.eu",
     license="GPLv3",
     description="Codon Usage to Specific Tissue OptiMizer",
-    url="https://github.com/hexavier/TisOpt",
+    url="https://github.com/hexavier/CUSTOM",
 )
