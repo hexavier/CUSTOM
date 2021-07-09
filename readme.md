@@ -42,10 +42,13 @@ best_egfp_lung = opt.select_best(by={"MFE":"min","MFEini":"max","CAI":"max","CPB
 This project has been developed at [Center for Genomic Regulation](http://www.crg.eu/).
 
 [Xavier Hernandez-Alias](mailto:xavier.hernandez@crg.eu)
+
 [Martin H. Schaefer](mailto:martin.schaefer@ieo.it)
+
 [Luis Serrano](mailto:luis.serrano@crg.eu)
 
 [Schaefer laboratory](https://www.schaeferlab.org)
+
 [Serrano laboratory](http://serranolab.crg.eu)
 
 
