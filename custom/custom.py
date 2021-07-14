@@ -381,7 +381,7 @@ class TissueOptimizer:
         compute_CPS()
         CPBs = []
         for seq in self.pool:
-            seqcodpairs = [seq[n:n+6] for n in range(0,len(seq),3) if len(seq[n:n+6])==6]
+            seqcodpairs = [seq[n:n+6] for n in range(0,len(seq),3) if (len(seq[n:n+6])==6)and(seq[n+3:n+6] not in ["TAA","TGA","TAG"])]
             codscores = [CPSs.loc[pair,"Homo_sapiens"] for pair in seqcodpairs]
             CPBs.append(np.mean(codscores))
         return CPBs
