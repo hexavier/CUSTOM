@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="img/logo.png" width="527" height="300">
+	<img src="img/logo.png" width="564" height="300">
 </p>
 
 # CUSTOM: Codon Usage to Specific Tissue OptiMizer
