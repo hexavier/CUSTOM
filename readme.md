@@ -19,7 +19,7 @@ This package provides a codon optimization tool for tissue-specific gene design.
 
 2) Install CUSTOM and its requirements using pip:
 ```bash
-pip install custom-tool
+pip install custom_optimizer
 ```
 
 ## Basic usage
