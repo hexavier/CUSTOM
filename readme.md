@@ -54,7 +54,7 @@ This project has been developed at [Center for Genomic Regulation](http://www.cr
 
 ## Cite
 
-Hernandez-Alias, X., Benisty, H., Serrano, L. & Schaefer, M. H. (2022). Using protein-per-mRNA differences among human tissues in codon optimization. bioRxiv 2022.03.22.485268 (https://www.biorxiv.org/content/10.1101/2022.03.22.485268)
+Hernandez-Alias, X., Benisty, H., Radusky, L.G., Serrano, L. & Schaefer, M. H. (2023). Using protein-per-mRNA differences among human tissues in codon optimization. Genome Biology, 24(1):34. (https://doi.org/10.1186/s13059-023-02868-2)
 
 
 ## License
