@@ -27,7 +27,7 @@ pip install custom_optimizer
 As a basic example, here is the code to optimize an eGFP protein to kidney:
 ```python
 # Import package
-import custom
+from custom import TissueOptimizer
 # Start the optimizer
 opt = TissueOptimizer("kidney", n_pool=100)
 # Optimize the eGFP sequence
