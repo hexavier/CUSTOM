@@ -27,7 +27,7 @@ setup(
     install_requires=[
         'numpy',
         'pandas',
-        'RNA'
+        'ViennaRNA'
     ],
     author="Xavier Hernandez-Alias",
     author_email="xavier.hernandez@crg.eu",
