@@ -34,7 +34,7 @@ opt = TissueOptimizer("Kidney", n_pool=100)
 egfp = "MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITLGMDELYK"
 opt.optimize(egfp)
 # Select the top 10 sequences
-best_egfp_lung = opt.select_best(by={"MFE":"min","MFEini":"max","CAI":"max","CPB":"max","ENC":"min"},homopolymers=7, top=10)
+best_egfp_kidney = opt.select_best(by={"MFE":"min","MFEini":"max","CAI":"max","CPB":"max","ENC":"min"},homopolymers=7, top=10)
 ```
 
 ## Contact
