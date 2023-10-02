@@ -29,7 +29,7 @@ As a basic example, here is the code to optimize an eGFP protein to kidney:
 # Import package
 from custom import TissueOptimizer
 # Start the optimizer
-opt = TissueOptimizer("kidney", n_pool=100)
+opt = TissueOptimizer("Kidney", n_pool=100)
 # Optimize the eGFP sequence
 egfp = "MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITLGMDELYK"
 opt.optimize(egfp)
