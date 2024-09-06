@@ -274,7 +274,7 @@ class TissueOptimizer:
         if all([s in "ATCG" for s in self.sequence]) and len(self.sequence)%3==0: # DNA sequence
             seqcodons = [self.sequence[n:n+3] for n in range(0,len(self.sequence),3)]
             # Create pool of optimized sequences
-            pool = []
+            pool = [self.sequence]
             for n in range(self.n_pool):
                 newseq = []
                 unifrand = np.random.uniform(size=len(seqcodons))
