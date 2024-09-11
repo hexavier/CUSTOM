@@ -470,9 +470,9 @@ class TissueOptimizer:
 
         '''
         check_is_optimized(self)
-        select_df = pd.DataFrame(index = range(self.n_pool))
+        select_df = pd.DataFrame(index = range(self.n_pool + 1))
         select_df["Sequence"] = self.pool
-        norm_df = pd.DataFrame(index = range(self.n_pool))
+        norm_df = pd.DataFrame(index = range(self.n_pool + 1))
         for c in by:
             if c=="MFE":
                 metric = np.array(self.MFE())
